@@ -1,16 +1,20 @@
 /*:
   - Note: For better experience use this Playground in split landscape
- # Objects
-For this experience try typing one of these:
+ # Choose Your Car
  
- * callout(Objects):
+ Now that we know a lot more about what types of cars exist and how they affect or not the environment it's time for you to choose your car!
+ 
+ All the choices you make from now are going to affect the environment so be careful!
+ 
+ Try typing one of these car models:
+ * callout(Cars):
  
     `.combustion`\
     `.hybrid`\
     `.electric`
  
  
-Change the subject and then click **Run My Code**!
+Change the variable value and then click **Run My Code**!
 */
 //#-hidden-code
 import PlaygroundSupport

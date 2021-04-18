@@ -1,7 +1,7 @@
 import SpriteKit
 import PlaygroundSupport
 
-public class GameSceneIntro: SKScene {
+public class IntroScene: SKScene {
     
     private var pages: SKNode!
     

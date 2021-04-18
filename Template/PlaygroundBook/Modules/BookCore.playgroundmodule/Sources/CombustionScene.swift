@@ -1,7 +1,7 @@
 import SpriteKit
 import PlaygroundSupport
 
-public class GameScene1: SKScene {
+public class CombustionScene: SKScene {
 
     private var pistao1: SKNode? {
         return self.childNode(withName: "pistao1")
@@ -29,6 +29,7 @@ public class GameScene1: SKScene {
     private var step: TimeInterval = 0
     private var lastUpdate: TimeInterval = 0
     private var gameState: GameStates = .intro
+    private var isFirstClick: Bool = true
     
     private var fireAnimation: SKAction!
     
@@ -56,15 +57,17 @@ public class GameScene1: SKScene {
             hasIgnited = true
             fire?.alpha = 1
             fire2?.alpha = 1
-            fire?.run(fireAnimation) {
-                self.fire?.alpha = 0
-                self.gameState = .finalLoop
-                PlaygroundPage.current.assessmentStatus = .pass(message: "Nice job! You can go to the [next page](@next)!")
+            if isFirstClick {
+                fire?.run(fireAnimation) {
+                    self.fire?.alpha = 0
+                    self.gameState = .finalLoop
+                    PlaygroundPage.current.assessmentStatus = .pass(message: "Nice job! If you've finished reading, go on to the [next page](@next)!")
+                }
+                fire2?.run(fireAnimation) {
+                    self.fire2?.alpha = 0
+                }
             }
-            fire2?.run(fireAnimation) {
-                self.fire2?.alpha = 0
-            }
-           
+           isFirstClick = false
         }
         
     }
@@ -118,7 +121,7 @@ public class GameScene1: SKScene {
         case .intro:
             if step > 1.5 {
                 gameState = .waitingForClick
-                PlaygroundPage.current.assessmentStatus = .pass(message: "Click on the valve to generate a spark!")
+                PlaygroundPage.current.assessmentStatus = .pass(message: "Click on the valves to generate a spark!")
             }
         case .waitingForClick:
             return

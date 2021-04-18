@@ -76,7 +76,7 @@ public class GameScene: SKScene {
             }
         }
     }
-
+    
     @objc static override public var supportsSecureCoding: Bool {
         get {
             return true
@@ -108,9 +108,8 @@ public class GameScene: SKScene {
         layers.append(layerNode)
         
         self.addChild(layerNode)
-            
     }
-
+    
     func touchDown(atPoint pos : CGPoint) {
         if pedal.contains(pos) {
             pedal.texture = SKTexture(imageNamed: "pressed_pedal")
@@ -120,53 +119,52 @@ public class GameScene: SKScene {
             car.run(carAnimation)
             
             if isFirstClick {
-                            switch editableCode {
-                            case .combustion:
-                                if speedometerCircle.zRotation > 1.35 {
-                                    let speedometerAnimation = SKAction.rotate(byAngle: -0.1, duration: 1)
-                                    speedometerCircle.run(speedometerAnimation)
-                                    let backgroundColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 1, duration: 1)
-                                    let carColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 0.5, duration: 1)
-                                    for layerNode in layers {
-                                        for layer in layerNode.children {
-                                            layer.run(backgroundColorAction)
-                                        }
-                                    }
-                                    car.run(carColorAction)
-                                }
-                            case .electric:
-                                if speedometerCircle.zRotation > -1.35 {
-                                    let speedometerAnimation = SKAction.rotate(byAngle: -2.8, duration: 3)
-                                    speedometerCircle.run(speedometerAnimation)
-                                }
-                            case .hybrid:
-                                if speedometerCircle.zRotation > 0.1 {
-                                    let speedometerAnimation = SKAction.rotate(byAngle: -1.4, duration: 2)
-                                    speedometerCircle.run(speedometerAnimation)
-                                    let backgroundColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 0.4, duration: 1)
-                                    let carColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 0.3, duration: 1)
-                                    for layerNode in layers {
-                                        for layer in layerNode.children {
-                                            layer.run(backgroundColorAction)
-                                        }
-                                    }
-                                    car.run(carColorAction)
-                                }
+                switch editableCode {
+                case .combustion:
+                    if speedometerCircle.zRotation > 1.35 {
+                        let speedometerAnimation = SKAction.rotate(byAngle: -0.1, duration: 1)
+                        speedometerCircle.run(speedometerAnimation)
+                        let backgroundColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 1, duration: 1)
+                        let carColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 0.5, duration: 1)
+                        for layerNode in layers {
+                            for layer in layerNode.children {
+                                layer.run(backgroundColorAction)
                             }
+                        }
+                        car.run(carColorAction)
+                        PlaygroundPage.current.assessmentStatus = .fail(hints: ["This doesn't seem to be the best option for the environment 😔"], solution: "Try the .hybrid or the .electric!")
+                    }
+                case .electric:
+                    if speedometerCircle.zRotation > -1.35 {
+                        let speedometerAnimation = SKAction.rotate(byAngle: -2.8, duration: 3)
+                        speedometerCircle.run(speedometerAnimation)
+                    }
+                case .hybrid:
+                    if speedometerCircle.zRotation > 0.1 {
+                        let speedometerAnimation = SKAction.rotate(byAngle: -1.4, duration: 2)
+                        speedometerCircle.run(speedometerAnimation)
+                        let backgroundColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 0.4, duration: 1)
+                        let carColorAction = SKAction.colorize(with: UIColor.brown, colorBlendFactor: 0.3, duration: 1)
+                        for layerNode in layers {
+                            for layer in layerNode.children {
+                                layer.run(backgroundColorAction)
+                            }
+                        }
+                        car.run(carColorAction)
+                        PlaygroundPage.current.assessmentStatus = .fail(hints: ["This seems a lot better than the combustion one but there's still a gap"], solution: "Try changing to the .electric!")
+                    }
+                }
             }
-            
-
-            
             isCarMoving = true
             buttonPressed = true
             isFirstClick = false
         }
     }
-
+    
     func touchMoved(toPoint pos : CGPoint) {
         
     }
-
+    
     func touchUp(atPoint pos : CGPoint) {
         if buttonPressed == true {
             pedal.texture = SKTexture(imageNamed: "pedal")
@@ -178,15 +176,15 @@ public class GameScene: SKScene {
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { touchDown(atPoint: t.location(in: self)) }
     }
-
+    
     override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { touchMoved(toPoint: t.location(in: self)) }
     }
-
+    
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { touchUp(atPoint: t.location(in: self)) }
     }
-
+    
     override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { touchUp(atPoint: t.location(in: self)) }
     }

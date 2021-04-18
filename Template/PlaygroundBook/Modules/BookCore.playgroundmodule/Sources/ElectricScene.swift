@@ -1,7 +1,7 @@
 import SpriteKit
 import PlaygroundSupport
 
-public class GameScene2: SKScene {
+public class ElectricScene: SKScene {
     
     private var background: SKSpriteNode!
     
