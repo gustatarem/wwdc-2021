@@ -28,6 +28,12 @@
 		6E80C5A5262504EC007F079B /* CombustionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6E80C5A4262504EC007F079B /* CombustionScene.sks */; };
 		6E80C5AA262504F5007F079B /* IntroScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6E80C5A9262504F5007F079B /* IntroScene.sks */; };
 		6E80C5AF26250508007F079B /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E80C5AE26250508007F079B /* IntroScene.swift */; };
+		6ED15664262DFB4B004B3721 /* spaceship_goes_zoom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6ED15663262DFB4B004B3721 /* spaceship_goes_zoom.wav */; };
+		6ED15669262DFBFA004B3721 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED15668262DFBFA004B3721 /* Sounds.swift */; };
+		6ED15671262E01CA004B3721 /* combustion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6ED15670262E01CA004B3721 /* combustion.wav */; };
+		6ED15676262E01D4004B3721 /* hybrid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6ED15675262E01D4004B3721 /* hybrid.wav */; };
+		6ED1567B262E02A5004B3721 /* electric_motor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1567A262E02A5004B3721 /* electric_motor.wav */; };
+		6ED15683262E07A6004B3721 /* engine_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6ED15682262E07A6004B3721 /* engine_sound.wav */; };
 		6EF2DEA3262BD8B3006EBC84 /* bookicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF2DEA2262BD8B3006EBC84 /* bookicon.png */; };
 		6EF32FB02628F4EA00D2CAD6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF32FAF2628F4EA00D2CAD6 /* GameScene.swift */; };
 		6EF32FB52628F55100D2CAD6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6EF32FB42628F55100D2CAD6 /* GameScene.sks */; };
@@ -134,7 +140,7 @@
 		5E1004BE208E7F6E00BCFE70 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5E2A7AE6204F630600F4E17A /* BaseBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BaseBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewSupport.swift; sourceTree = "<group>"; };
-		5E551EC42371FC3F00784365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E551EC42371FC3F00784365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/gustatarem/Docs/ADA/WWDC21/ChooseYourCar/Template/PlaygroundBook/PrivateResources/Assets.xcassets; sourceTree = "<absolute>"; };
 		5E6F7E5C2367B64A008CC191 /* BookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPI.swift; sourceTree = "<group>"; };
 		5E6F7E612368FB6A008CC191 /* libBookAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ModuleOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
@@ -156,6 +162,12 @@
 		6E80C5A4262504EC007F079B /* CombustionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CombustionScene.sks; sourceTree = "<group>"; };
 		6E80C5A9262504F5007F079B /* IntroScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = IntroScene.sks; sourceTree = "<group>"; };
 		6E80C5AE26250508007F079B /* IntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScene.swift; sourceTree = "<group>"; };
+		6ED15663262DFB4B004B3721 /* spaceship_goes_zoom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spaceship_goes_zoom.wav; sourceTree = "<group>"; };
+		6ED15668262DFBFA004B3721 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		6ED15670262E01CA004B3721 /* combustion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = combustion.wav; sourceTree = "<group>"; };
+		6ED15675262E01D4004B3721 /* hybrid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hybrid.wav; sourceTree = "<group>"; };
+		6ED1567A262E02A5004B3721 /* electric_motor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electric_motor.wav; sourceTree = "<group>"; };
+		6ED15682262E07A6004B3721 /* engine_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = engine_sound.wav; sourceTree = "<group>"; };
 		6EF2DEA2262BD8B3006EBC84 /* bookicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookicon.png; path = ../../../../wwdc_assets/bookicon.png; sourceTree = "<group>"; };
 		6EF32FAF2628F4EA00D2CAD6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		6EF32FB42628F55100D2CAD6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -301,6 +313,7 @@
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
 				447A2677260036B500C533BC /* CombustionScene.swift */,
 				6EF32FAF2628F4EA00D2CAD6 /* GameScene.swift */,
+				6ED15668262DFBFA004B3721 /* Sounds.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -345,6 +358,7 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				6ED15662262DFB21004B3721 /* Sounds */,
 				6EF2DEA2262BD8B3006EBC84 /* bookicon.png */,
 				6EF32FB42628F55100D2CAD6 /* GameScene.sks */,
 				6E0500C22625D2880094C00B /* ElectricScene.sks */,
@@ -363,6 +377,18 @@
 				5E70679E23678DC00094BDEF /* Modules */,
 			);
 			name = "Supporting Content";
+			sourceTree = "<group>";
+		};
+		6ED15662262DFB21004B3721 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6ED15682262E07A6004B3721 /* engine_sound.wav */,
+				6ED1567A262E02A5004B3721 /* electric_motor.wav */,
+				6ED15675262E01D4004B3721 /* hybrid.wav */,
+				6ED15670262E01CA004B3721 /* combustion.wav */,
+				6ED15663262DFB4B004B3721 /* spaceship_goes_zoom.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,14 +520,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED15664262DFB4B004B3721 /* spaceship_goes_zoom.wav in Resources */,
+				6ED15671262E01CA004B3721 /* combustion.wav in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
+				6ED15683262E07A6004B3721 /* engine_sound.wav in Resources */,
 				6EF2DEA3262BD8B3006EBC84 /* bookicon.png in Resources */,
 				6E0500C32625D2880094C00B /* ElectricScene.sks in Resources */,
+				6ED1567B262E02A5004B3721 /* electric_motor.wav in Resources */,
 				6E80C5A5262504EC007F079B /* CombustionScene.sks in Resources */,
 				5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */,
 				6EF32FB52628F55100D2CAD6 /* GameScene.sks in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
 				6E80C5AA262504F5007F079B /* IntroScene.sks in Resources */,
+				6ED15676262E01D4004B3721 /* hybrid.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +607,7 @@
 				447A2678260036B500C533BC /* CombustionScene.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
 				5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */,
+				6ED15669262DFBFA004B3721 /* Sounds.swift in Sources */,
 				6E0500C82625D3A40094C00B /* ElectricScene.swift in Sources */,
 				6E80C5AF26250508007F079B /* IntroScene.swift in Sources */,
 			);

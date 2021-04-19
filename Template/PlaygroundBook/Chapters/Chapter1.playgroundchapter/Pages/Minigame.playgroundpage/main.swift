@@ -14,7 +14,9 @@
     `.electric`
  
  
-Change the variable value and then click **Run My Code**!
+ Change the variable value and then click **Run My Code**!
+ 
+ Press the pedal on the bottom right of the screen and see what happens!
 */
 //#-hidden-code
 import PlaygroundSupport

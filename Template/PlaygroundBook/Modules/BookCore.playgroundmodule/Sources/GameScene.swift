@@ -1,5 +1,6 @@
 import SpriteKit
 import PlaygroundSupport
+import AVFoundation
 
 public enum Cars: Int {
     case combustion
@@ -118,6 +119,15 @@ public class GameScene: SKScene {
             let carAnimation = SKAction.moveTo(x: 0, duration: 1)
             car.run(carAnimation)
             
+            switch editableCode {
+            case .combustion:
+                GSAudio.sharedInstance.playSound(soundFileName: "combustion")
+            case .hybrid:
+                GSAudio.sharedInstance.playSound(soundFileName: "hybrid")
+            case .electric:
+                GSAudio.sharedInstance.playSound(soundFileName: "spaceship_goes_zoom")
+            }
+            
             if isFirstClick {
                 switch editableCode {
                 case .combustion:
@@ -138,6 +148,7 @@ public class GameScene: SKScene {
                     if speedometerCircle.zRotation > -1.35 {
                         let speedometerAnimation = SKAction.rotate(byAngle: -2.8, duration: 3)
                         speedometerCircle.run(speedometerAnimation)
+                        
                     }
                 case .hybrid:
                     if speedometerCircle.zRotation > 0.1 {
@@ -171,6 +182,8 @@ public class GameScene: SKScene {
             pedal.scale(to: CGSize(width: 70, height: 139))
             buttonPressed = false
         }
+        
+        GSAudio.sharedInstance.stopAll()
     }
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -1,5 +1,6 @@
 import SpriteKit
 import PlaygroundSupport
+import AVFoundation
 
 public class ElectricScene: SKScene {
     
@@ -41,10 +42,12 @@ public class ElectricScene: SKScene {
                 let rotation = SKAction.rotate(byAngle: 360, duration: 0.6)
                 let action = SKAction.repeatForever(rotation)
                 disc.run(action)
+                GSAudio.sharedInstance.playSound(soundFileName: "electric_motor", loops: true)
                 buttonState = .turnedOn
             case .turnedOn:
                 button.texture = SKTexture(imageNamed: "off_btn")
                 disc.removeAllActions()
+                GSAudio.sharedInstance.stopAll()
                 buttonState = .turnedOff
             }
         }

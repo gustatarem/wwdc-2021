@@ -61,7 +61,7 @@ public class CombustionScene: SKScene {
                 fire?.run(fireAnimation) {
                     self.fire?.alpha = 0
                     self.gameState = .finalLoop
-                    PlaygroundPage.current.assessmentStatus = .pass(message: "Nice job! If you've finished reading, go on to the [next page](@next)!")
+                    PlaygroundPage.current.assessmentStatus = .pass(message: "Nice job! Read the text on the left to learn more about what just happened here!")
                 }
                 fire2?.run(fireAnimation) {
                     self.fire2?.alpha = 0
