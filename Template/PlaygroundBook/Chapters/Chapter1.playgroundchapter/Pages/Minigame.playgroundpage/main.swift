@@ -1,10 +1,10 @@
 /*:
-  - Note: For better experience use this Playground in split landscape
+  - Note: For a better experience use this Playground in split landscape
  # Choose Your Car
  
  Now that we know a lot more about what types of cars exist and how they affect or not the environment it's time for you to choose your car!
  
- All the choices you make from now are going to affect the environment so be careful!
+ All the choices you make from now on are going to affect the environment, so be careful!
  
  Try typing one of these car models:
  * callout(Cars):

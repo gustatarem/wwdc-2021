@@ -33,7 +33,7 @@
  
  ![Exhaust](exhaust.png)
  
- It contains some substances that contribute on the air pollution, such as Nitrogen Oxides (NOx) and Carbon Monoxide (CO)! That is why, even though it's the most popular model, combustion engine cars are a problem to the environment!
+ It contains some substances that contribute to the air pollution, such as Nitrogen Oxides (NOx) and Carbon Monoxide (CO)! That is why, even though it's the most popular model, combustion engine cars are a problem to the environment!
  
  - Experiment: Go to the [next page](@next)!
  

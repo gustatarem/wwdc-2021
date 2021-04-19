@@ -15,7 +15,7 @@
 
  * **Combustion Engine**: powers the car;
  * **Transmission**: converts the power coming from the engine to momentum which drives the wheels;
- * **Differential**: allows the wheels to rotate in different speeds so the car can make turns more easily.
+ * **Differential**: allows the wheels to rotate in different speeds so the car makes turns more easily.
 
  It is the most popular type of car in the world... but not the most appropriate for the environment as we are going to see next!
 
