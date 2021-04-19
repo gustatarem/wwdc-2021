@@ -15,7 +15,7 @@
 
  * **Combustion Engine**: powers the car;
  * **Transmission**: converts the power coming from the engine to momentum which drives the wheels;
- * **Differential**: allows your wheels to rotate in different speeds so the car can make turns more easily.
+ * **Differential**: allows the wheels to rotate in different speeds so the car can make turns more easily.
 
  It is the most popular type of car in the world... but not the most appropriate for the environment as we are going to see next!
 
@@ -23,7 +23,7 @@
 
  They also have three main components:
 
- * **Electric Motor**: that powers the car;
+ * **Electric Motor**: powers the car;
  * **Battery Pack**: is a set of identical batteries that store charge so the car can turn on;
  * **Differential**: has the same functionality of the combustion engine one but it's attatched to the motor.
 

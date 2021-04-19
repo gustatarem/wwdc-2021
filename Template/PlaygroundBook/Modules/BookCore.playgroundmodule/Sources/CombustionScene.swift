@@ -1,5 +1,6 @@
 import SpriteKit
 import PlaygroundSupport
+import AVFoundation
 
 public class CombustionScene: SKScene {
 
@@ -69,6 +70,7 @@ public class CombustionScene: SKScene {
             }
            isFirstClick = false
         }
+        GSAudio.sharedInstance.playSound(soundFileName: "engine_sound", loops: true)
         
     }
 

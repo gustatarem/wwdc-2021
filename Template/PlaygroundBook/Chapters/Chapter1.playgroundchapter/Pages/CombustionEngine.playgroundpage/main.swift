@@ -36,6 +36,7 @@
  It contains some substances that contribute on the air pollution, such as Nitrogen Oxides (NOx) and Carbon Monoxide (CO)! That is why, even though it's the most popular model, combustion engine cars are a problem to the environment!
  
  - Experiment: Go to the [next page](@next)!
+ 
 */
 
 //#-hidden-code
@@ -43,20 +44,6 @@ import PlaygroundSupport
 import SpriteKit
 import UIKit
 import BookCore
-import AVFoundation
-
-var sound: AVAudioPlayer!
-
-func playSound() {
-    let url: URL = Bundle.main.url(forResource: "engine_sound", withExtension: "wav")!
-    sound = try! AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
-
-    sound.numberOfLoops = -1
-    sound.prepareToPlay()
-    sound.volume = 0.3
-    sound.play()
-}
-playMusic()
 
 let sceneView = SKView(frame: CGRect(x: 0, y: 0, width: 768, height: 1024))
 if let scene = CombustionScene(fileNamed: "CombustionScene") {

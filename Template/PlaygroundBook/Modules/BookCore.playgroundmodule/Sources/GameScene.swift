@@ -142,7 +142,7 @@ public class GameScene: SKScene {
                             }
                         }
                         car.run(carColorAction)
-                        PlaygroundPage.current.assessmentStatus = .fail(hints: ["This doesn't seem to be the best option for the environment 😔"], solution: "Try the .hybrid or the .electric!")
+                        PlaygroundPage.current.assessmentStatus = .fail(hints: ["This doesn't seem to be the best option for the environment... 😔"], solution: "Try the .hybrid or the .electric!")
                     }
                 case .electric:
                     if speedometerCircle.zRotation > -1.35 {
@@ -162,7 +162,7 @@ public class GameScene: SKScene {
                             }
                         }
                         car.run(carColorAction)
-                        PlaygroundPage.current.assessmentStatus = .fail(hints: ["This seems a lot better than the combustion one but there's still a gap"], solution: "Try changing to the .electric!")
+                        PlaygroundPage.current.assessmentStatus = .fail(hints: ["That seems a lot better than the combustion one but there's still a gap..."], solution: "Try changing to the .electric!")
                     }
                 }
             }
